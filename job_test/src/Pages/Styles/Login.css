@@ -1,0 +1,48 @@
+.wrapper-title {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30%;
+    height: 100px;
+}
+
+.wrapper-login {
+    margin: 0 30%;
+    padding: 2% 5%;
+    border: 4px solid  rgb(210, 142, 250);
+    border-radius: 5px;
+}
+
+.wrapper-login .input-group-text {
+    width: 80px;
+    background-color: rgb(139, 56, 187);
+    color: #ffffff;
+}
+
+.wrapper-login .top-elem {
+    margin-top: 10px;
+}
+
+.wrapper-login .bottom-elem  {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrapper-login .bottom-elem .forgot-password {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-login .bottom-elem .forgot-password .link {
+    text-decoration: none;
+    color: black;
+    font-weight: 18px;
+}
+
+.send-button-wrapper .btn-primary {
+    margin-top: 10px;
+    background-color: rgb(139, 56, 187);
+    border-color:rgb(139, 56, 187);
+} 

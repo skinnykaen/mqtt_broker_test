@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+
+li.menu-element {
+  padding-left: 2%;
+  cursor: pointer;
+}

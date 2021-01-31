@@ -1,0 +1,17 @@
+.send-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.registration .wrapper-registration {
+  margin: 0 30%;
+  padding: 2% 5%;
+  border: 4px solid  rgb(210, 142, 250);
+  border-radius: 5px;
+}
+
+.registration .wrapper-registration .input-group-text {
+  width: 80px;
+  background-color: rgb(139, 56, 187);
+  color: #ffffff;
+}
