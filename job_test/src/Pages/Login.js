@@ -1,31 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './Styles/Login.css';
-
 
 
 export default class Login extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      email: '',
-      password: ''
-    };
-    this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handlePasswordChange = this.handlePasswordChange.bind(this);
-
-  }
-
-  handleEmailChange(e) {
-    this.setState({ email: e.target.value })
-  }
-  handlePasswordChange(e) {
-    this.setState({ password: e.target.value })
   }
 
   signIn() {
-    alert('Email address is ' + this.state.email + ' Password is ' + this.state.password);
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    alert('Email address is ' + email + ' Password is ' + password);
   }
   
   render() {
@@ -57,7 +44,7 @@ export default class Login extends React.Component {
               </div>
 
               <div className="send-button-wrapper">
-                <button type="submit" onClick={this.signIn} className="btn btn-primary">Войти</button>
+                <button type="submit" onClick={this.signIn.bind(this)} className="btn btn-primary">Войти</button>
               </div>
             </div>
           </div>
