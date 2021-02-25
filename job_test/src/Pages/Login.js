@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './Styles/Login.css';
-
+import axios from 'axios';
 
 export default class Login extends React.Component {
 
@@ -13,6 +12,16 @@ export default class Login extends React.Component {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     alert('Email address is ' + email + ' Password is ' + password);
+
+    axios({
+      method: 'get',
+      url: 'http://127.0.0.1:8000/hello',
+      data: {
+        email: email
+      }
+    }).then(response => {
+      console.log(response)
+    })
   }
   
   render() {
