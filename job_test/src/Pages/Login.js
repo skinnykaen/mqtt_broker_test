@@ -14,14 +14,17 @@ export default class Login extends React.Component {
     alert('Email address is ' + email + ' Password is ' + password);
 
     axios({
-      method: 'get',
+      method: 'post',
       url: 'http://127.0.0.1:8000/hello',
       data: {
+        id: 15,
         email: email
       }
     }).then(response => {
-      console.log(response)
-    })
+      console.log(response);
+    }, (error) => {
+      console.log(error)
+    });
   }
   
   render() {
