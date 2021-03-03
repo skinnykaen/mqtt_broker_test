@@ -1,3 +1,12 @@
+.alert {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    color:rgb(199, 61, 61);
+}
+
 .wrapper-title {
     box-sizing: border-box;
     display: flex;
@@ -5,6 +14,7 @@
     justify-content: center;
     padding: 0 30%;
     height: 100px;
+    
 }
 
 .wrapper-login {
@@ -46,3 +56,8 @@
     background-color: rgb(139, 56, 187);
     border-color:rgb(139, 56, 187);
 } 
+
+
+.wrapper-login .bottom-elem .forgot-password .link {
+    margin-bottom: 8px;
+}

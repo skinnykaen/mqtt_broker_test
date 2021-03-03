@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.21.1",
+    "email-validator": "^2.0.4",
     "md5": "^2.3.0",
     "react-router-dom": "^5.2.0"
   }
