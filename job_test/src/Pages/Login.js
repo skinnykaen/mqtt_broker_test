@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styles/Login.css';
 import axios from 'axios';
+import md5 from 'md5'
 
 export default class Login extends React.Component {
 
@@ -10,8 +11,9 @@ export default class Login extends React.Component {
 
   signIn() {
     let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    let password = md5(document.getElementById("password").value);
     
+    console.log(password)
     axios({
       method: 'post',
       url: 'http://127.0.0.1:8000/login',
@@ -33,6 +35,7 @@ export default class Login extends React.Component {
     return (
       <div className="login">
         <div className="wrapper-title">
+          
           <div className="title">
             <h3>Добро пожаловать в MQTT Broker!</h3>
           </div>

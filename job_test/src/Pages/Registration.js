@@ -1,6 +1,7 @@
 import React from 'react';
 import './Styles/Registration.css'
 import axios from 'axios'
+import md5 from 'md5'
 
 export default class Registration extends React.Component {
 
@@ -10,7 +11,7 @@ export default class Registration extends React.Component {
 
   send() {
     let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
+    let password = md5(document.getElementById("password").value);
 
     axios({
       method: 'post',
